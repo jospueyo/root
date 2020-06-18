@@ -17,7 +17,7 @@ links.forEach(function(link){
 
     // activem l'enllaç després de 600 ms
     setTimeout(function(){
-      location.href = "/";
+      location.href = "/boletines";
     },600);
   });
 });
