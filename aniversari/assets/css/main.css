@@ -29,7 +29,8 @@ a{
   border-color: #C6426E; */
   border-bottom: solid 2px #C6426E; /*això és una shorthand property, l'odre no importa perquè són valors de tipus diferents */
   padding: 1em 0; /*en l'ordre de les agulles del rellotge si n'hi ha 4, si n'hi ha 2 és dalt/baix i esq/dreta.*/
-  font-size: 2em;
+  margin-left: 2em;
+  text-indent: -2em;
 }
 
 .position{
@@ -59,7 +60,22 @@ a{
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   position: relative;
-  overflow: scroll;
+  overflow: auto;
+  overflow-x: hidden !important;
+}
+
+.content_act{
+  max-width: 960px;
+  max-height: 800px;
+  width: 100%;
+  height: 80vh;
+  background-color:white;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden !important;
 }
 
 .actions{
@@ -96,6 +112,15 @@ a:active{
   text-align: justify;
 }
 
+.paragraph-bold{
+  line-height: 1.8em;
+  font-weight: 700;
+  text-align: left;
+  color: #642B73;
+  /*background-color: #642B73;*/
+}
+
+
 .table{
   width: 100%;
   border-spacing: 0; /*si no queda espai entre cel·les */
@@ -110,6 +135,11 @@ a:active{
 .table tr:nth-child(even){
   background: #f3e5f5;
   }
+
+.table td:nth-child(2){
+  font-weight: 700;
+  color:#642B73;
+}
 
 .fa-star{
   color: #ffc400;
