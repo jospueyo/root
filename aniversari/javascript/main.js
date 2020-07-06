@@ -6,7 +6,7 @@ links.forEach(function(link){
   // Añadir un elemento click a cada uno de ellos
   link.addEventListener("click",function(ev){
     ev.preventDefault();
-    let content = document.querySelector('.content');
+    let content = document.querySelector('.content_act');
     // li traiem l'animació
     content.classList.remove("animate__zoomIn");
     content.classList.remove("animate__animated");
@@ -17,7 +17,7 @@ links.forEach(function(link){
 
     // activem l'enllaç després de 600 ms
     setTimeout(function(){
-      location.href = "/boletines";
+      location.href = "/aniversari";
     },600);
   });
 });
